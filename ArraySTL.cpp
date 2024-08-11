@@ -17,11 +17,11 @@ for(int i=0;i<6;i++){
 }
 cout<<"count value "<<count<<" "<<endl;
 
-all_of(arr, arr+6, [](int x){ return x>0;}) ? cout<<"all elements of array is +ve"<<endl : cout<<"All elements of array is not necessary to be +ve"<<endl;
+    all_of(arr, arr+6, [](int x){ return x>0;}) ? cout<<"all elements of array is +ve"<<endl : cout<<"All elements of array is not necessary to be +ve"<<endl;
     
-    any_of(arr, arr+6, [](int x){return x<0;}) ? cout<<"we have atleast one -ve element"<<endl : cout<<"All elements are +ve"<<endl;
+    any_of(arr, arr+6, [](int x){return x<0;}) ? cout<<"we have at least one -ve element"<<endl : cout<<"All elements are +ve"<<endl;
     
-    none_of(arr, arr+6, [](int x){return x==100;}) ? cout<<"we have none of element exactly is equal to 100 "<<endl : cout<<"It means we have atleast one element  = 100"<<endl;
+    none_of(arr, arr+6, [](int x){return x==100;}) ? cout<<"we have none of the element exactly is equal to 100 "<<endl: cout<<"It means we have at least one element  = 100"<<endl;
     
 
 int arr1[6];
@@ -38,8 +38,8 @@ int arr1[6];
 //<----------OUTPUT----------->
 // PS D:\C++ programming> cd "d:\C++ programming\" ; if ($?) { g++ ArraySTL.cpp -o ArraySTL } ; if ($?) { .\ArraySTL }
 // count value 6 
-// all elements of array is +ve
+//All elements of an array are +ve
 // All elements are +ve
-// we have none of element exactly is equal to 100 
+//We have none of elements exactly is equal to 100 
 // 1 4 3 5 6 7 
 // 20 21 22 23 24 25 
